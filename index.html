@@ -10,15 +10,30 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
-    }
-    iframe {
-      width: 100%;
+      display: flex;
+      flex-direction: column;
       height: 100vh;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    iframe {
+      flex-grow: 1;
+      width: 100%;
       border: none;
     }
   </style>
 </head>
 <body>
+  <header>Pokémon EXP Calculator</header>
   <iframe 
     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSYR5kzkuD7zX-bGTgFktYqJ_7Oeu581amC8j58gR_vqWMON5SA7i6Jipto3IEJlIeQC9DYE4MGYH-9/pubhtml?widget=true&amp;headers=false">
   </iframe>
